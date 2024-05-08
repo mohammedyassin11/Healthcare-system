@@ -92,7 +92,9 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/wait.h \
   /Users/asser/Desktop/hospital_lab/hospital/admin.h \
   /Users/asser/Desktop/hospital_lab/hospital/mainwindow.h \
+  /Users/asser/Desktop/hospital_lab/hospital/patient.h \
   /Users/asser/Desktop/hospital_lab/hospital/register.h \
+  /Users/asser/Desktop/hospital_lab/hospital/staff.h \
   /Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
   /Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
   /Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \

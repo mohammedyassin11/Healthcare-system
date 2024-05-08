@@ -53,6 +53,15 @@ void MainWindow::LoginButton_clicked()
                     // and hide the registration window
                     QMessageBox::information(this, "Success", "Login successful!");
 
+                    if (STATUS == "Patient")
+                    {
+                        this->hide();
+
+                        Patient patient;
+                        patient.isVisible();
+                        patient.exec();
+                    }
+
                     if (STATUS == "admin")
                     {
                         this->hide();
@@ -61,6 +70,15 @@ void MainWindow::LoginButton_clicked()
                         ADMIN.isVisible();
                         ADMIN.exec();
                     }
+
+                    if (STATUS == "Doctor" or STATUS == "Nurse" )
+                    {
+                        Staff staff;
+                        staff.isVisible();
+                        staff.exec();
+                    }
+                        \
+
 
                     return;
                 } else {

@@ -5,6 +5,8 @@
 #include <QDialog>
 #include "register.h"
 #include "admin.h"
+#include "patient.h"
+#include "staff.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

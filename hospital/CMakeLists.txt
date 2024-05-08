@@ -27,6 +27,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         patient.h patient.cpp patient.ui
         managementsystem.h managementsystem.cpp
         admin.h admin.cpp admin.ui
+        staff.h staff.cpp staff.ui
 
 
 

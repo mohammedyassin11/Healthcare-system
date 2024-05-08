@@ -17,6 +17,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTextBrowser>
 
 QT_BEGIN_NAMESPACE
 
@@ -38,7 +39,9 @@ public:
     QLabel *NameLabel;
     QLabel *Excalamationlabel;
     QLabel *ProfilePic;
-    QLabel *Logo;
+    QTextBrowser *textBrowser;
+    QPushButton *bookpushButton_2;
+    QPushButton *pushButton_2;
 
     void setupUi(QDialog *Patient)
     {
@@ -77,7 +80,7 @@ public:
         InstructionsLabel->setGeometry(QRect(480, 40, 251, 41));
         pushButton = new QPushButton(Patient);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(70, 540, 221, 71));
+        pushButton->setGeometry(QRect(60, 460, 221, 71));
         WelcomeLabel = new QLabel(Patient);
         WelcomeLabel->setObjectName("WelcomeLabel");
         WelcomeLabel->setGeometry(QRect(190, 10, 101, 31));
@@ -90,9 +93,15 @@ public:
         ProfilePic = new QLabel(Patient);
         ProfilePic->setObjectName("ProfilePic");
         ProfilePic->setGeometry(QRect(10, 10, 111, 61));
-        Logo = new QLabel(Patient);
-        Logo->setObjectName("Logo");
-        Logo->setGeometry(QRect(30, 90, 431, 381));
+        textBrowser = new QTextBrowser(Patient);
+        textBrowser->setObjectName("textBrowser");
+        textBrowser->setGeometry(QRect(60, 100, 321, 291));
+        bookpushButton_2 = new QPushButton(Patient);
+        bookpushButton_2->setObjectName("bookpushButton_2");
+        bookpushButton_2->setGeometry(QRect(480, 480, 100, 32));
+        pushButton_2 = new QPushButton(Patient);
+        pushButton_2->setObjectName("pushButton_2");
+        pushButton_2->setGeometry(QRect(60, 570, 151, 51));
 
         retranslateUi(Patient);
 
@@ -113,7 +122,8 @@ public:
         NameLabel->setText(QString());
         Excalamationlabel->setText(QCoreApplication::translate("Patient", "!", nullptr));
         ProfilePic->setText(QString());
-        Logo->setText(QString());
+        bookpushButton_2->setText(QCoreApplication::translate("Patient", "Book", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("Patient", "Return to Login", nullptr));
     } // retranslateUi
 
 };

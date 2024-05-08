@@ -4,3 +4,4 @@
 #include "EWIEGA46WW/moc_managementsystem.cpp"
 #include "EWIEGA46WW/moc_patient.cpp"
 #include "EWIEGA46WW/moc_register.cpp"
+#include "EWIEGA46WW/moc_staff.cpp"

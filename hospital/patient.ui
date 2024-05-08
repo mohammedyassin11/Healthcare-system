@@ -134,8 +134,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>540</y>
+     <x>60</x>
+     <y>460</y>
      <width>221</width>
      <height>71</height>
     </rect>
@@ -196,17 +196,40 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="Logo">
+  <widget class="QTextBrowser" name="textBrowser">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>90</y>
-     <width>431</width>
-     <height>381</height>
+     <x>60</x>
+     <y>100</y>
+     <width>321</width>
+     <height>291</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bookpushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>480</y>
+     <width>100</width>
+     <height>32</height>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>Book</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>570</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Return to Login</string>
    </property>
   </widget>
  </widget>
