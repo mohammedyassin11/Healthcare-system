@@ -22,8 +22,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::LoginButton_clicked()
 {
-    QString name[] = {"admin"};
-    QString password[] = {"admin123"};
+    QString name[] = {"admin","patient"};
+    QString password[] = {"admin123","password"};
 
     QString uName = ui->UsernameInput->text();
     QString uPassword = ui->PasswordInput->text();

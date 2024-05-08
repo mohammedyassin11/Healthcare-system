@@ -25,6 +25,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         register.h register.cpp register.ui
         patient.h patient.cpp patient.ui
+        managementsystem.h managementsystem.cpp
 
 
 

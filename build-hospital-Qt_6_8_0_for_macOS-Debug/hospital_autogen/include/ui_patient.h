@@ -23,7 +23,7 @@ public:
     {
         if (Patient->objectName().isEmpty())
             Patient->setObjectName("Patient");
-        Patient->resize(400, 300);
+        Patient->resize(782, 653);
 
         retranslateUi(Patient);
 

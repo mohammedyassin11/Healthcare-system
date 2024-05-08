@@ -97,10 +97,14 @@ hospital_autogen/timestamp: \
 	/Users/asser/Desktop/hospital_lab/hospital/main.cpp \
 	/Users/asser/Desktop/hospital_lab/hospital/mainwindow.cpp \
 	/Users/asser/Desktop/hospital_lab/hospital/mainwindow.h \
+	/Users/asser/Desktop/hospital_lab/hospital/managementsystem.cpp \
+	/Users/asser/Desktop/hospital_lab/hospital/managementsystem.h \
 	/Users/asser/Desktop/hospital_lab/hospital/patient.cpp \
 	/Users/asser/Desktop/hospital_lab/hospital/patient.h \
 	/Users/asser/Desktop/hospital_lab/hospital/register.cpp \
 	/Users/asser/Desktop/hospital_lab/hospital/register.h \
+	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QDateTime \
+	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QString \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \
@@ -119,6 +123,7 @@ hospital_autogen/timestamp: \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayalgorithms.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qbytearraylist.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayview.h \
+	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcalendar.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qchar.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcompare.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcompare_impl.h \
@@ -132,6 +137,7 @@ hospital_autogen/timestamp: \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcontiguouscache.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qdarwinhelpers.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qdatastream.h \
+	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qdatetime.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qdebug.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qendian.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qexceptionhandling.h \
@@ -151,6 +157,7 @@ hospital_autogen/timestamp: \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qlatin1stringview.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qline.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qlist.h \
+	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qlocale.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qlogging.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qmalloc.h \
 	/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qmap.h \

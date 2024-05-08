@@ -347,6 +347,12 @@
 			null
 		],
 		[
+			"/Users/asser/Desktop/hospital_lab/hospital/managementsystem.h",
+			"MU",
+			"EWIEGA46WW/moc_managementsystem.cpp",
+			null
+		],
+		[
 			"/Users/asser/Desktop/hospital_lab/hospital/patient.h",
 			"MU",
 			"EWIEGA46WW/moc_patient.cpp",
@@ -419,6 +425,11 @@
 		[ "/Users/asser/Desktop/hospital_lab/hospital/main.cpp", "MU", null ],
 		[
 			"/Users/asser/Desktop/hospital_lab/hospital/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/asser/Desktop/hospital_lab/hospital/managementsystem.cpp",
 			"MU",
 			null
 		],

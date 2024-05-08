@@ -63,7 +63,7 @@ public:
         RegisterButton->setGeometry(QRect(260, 390, 81, 32));
         PixmapLabel = new QLabel(centralwidget);
         PixmapLabel->setObjectName("PixmapLabel");
-        PixmapLabel->setGeometry(QRect(140, 20, 211, 201));
+        PixmapLabel->setGeometry(QRect(150, 20, 211, 201));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");

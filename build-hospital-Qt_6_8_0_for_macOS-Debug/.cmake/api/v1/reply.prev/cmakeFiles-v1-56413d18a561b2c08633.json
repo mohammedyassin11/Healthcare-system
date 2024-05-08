@@ -1394,9 +1394,6 @@
 			"path" : "/Users/asser/Qt/6.8.0/macos/lib/cmake/Qt6/macos/Info.plist.app.in"
 		},
 		{
-			"path" : "resource.qrc"
-		},
-		{
 			"isGenerated" : true,
 			"path" : "/Users/asser/Desktop/hospital_lab/build-hospital-Qt_6_8_0_for_macOS-Debug/.qt/info_plist/hospital/Info.plist"
 		}

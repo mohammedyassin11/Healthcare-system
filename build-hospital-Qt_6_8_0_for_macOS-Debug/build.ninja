@@ -89,6 +89,14 @@ build CMakeFiles/hospital.dir/patient.cpp.o: CXX_COMPILER__hospital_unscanned_De
   OBJECT_DIR = CMakeFiles/hospital.dir
   OBJECT_FILE_DIR = CMakeFiles/hospital.dir
 
+build CMakeFiles/hospital.dir/managementsystem.cpp.o: CXX_COMPILER__hospital_unscanned_Debug /Users/asser/Desktop/hospital_lab/hospital/managementsystem.cpp || cmake_object_order_depends_target_hospital
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/hospital.dir/managementsystem.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/asser/Desktop/hospital_lab/build-hospital-Qt_6_8_0_for_macOS-Debug/hospital_autogen/include -isystem /Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Headers -iframework /Users/asser/Qt/6.8.0/macos/lib -isystem /Users/asser/Qt/6.8.0/macos/mkspecs/macx-clang -isystem /Users/asser/Qt/6.8.0/macos/include -isystem /Users/asser/Qt/6.8.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/asser/Qt/6.8.0/macos/lib/QtGui.framework/Headers
+  OBJECT_DIR = CMakeFiles/hospital.dir
+  OBJECT_FILE_DIR = CMakeFiles/hospital.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target hospital
@@ -97,7 +105,7 @@ build CMakeFiles/hospital.dir/patient.cpp.o: CXX_COMPILER__hospital_unscanned_De
 #############################################
 # Link the executable hospital.app/Contents/MacOS/hospital
 
-build hospital.app/Contents/MacOS/hospital: CXX_EXECUTABLE_LINKER__hospital_Debug CMakeFiles/hospital.dir/hospital_autogen/mocs_compilation.cpp.o CMakeFiles/hospital.dir/main.cpp.o CMakeFiles/hospital.dir/mainwindow.cpp.o CMakeFiles/hospital.dir/register.cpp.o CMakeFiles/hospital.dir/patient.cpp.o | /Users/asser/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/asser/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/QtGui /Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/QtCore || hospital_autogen hospital_autogen_timestamp_deps
+build hospital.app/Contents/MacOS/hospital: CXX_EXECUTABLE_LINKER__hospital_Debug CMakeFiles/hospital.dir/hospital_autogen/mocs_compilation.cpp.o CMakeFiles/hospital.dir/main.cpp.o CMakeFiles/hospital.dir/mainwindow.cpp.o CMakeFiles/hospital.dir/register.cpp.o CMakeFiles/hospital.dir/patient.cpp.o CMakeFiles/hospital.dir/managementsystem.cpp.o | /Users/asser/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/asser/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/QtGui /Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/QtCore || hospital_autogen hospital_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk
   LINK_LIBRARIES = -Wl,-rpath,/Users/asser/Qt/6.8.0/macos/lib  /Users/asser/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets  /Users/asser/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/QtGui  /Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration  -Xlinker -framework -Xlinker OpenGL  -Xlinker -framework -Xlinker AGL  -framework AppKit  -framework ImageIO  -framework Metal
   LINK_PATH = -iframework /Users/asser/Qt/6.8.0/macos/lib
@@ -199,7 +207,7 @@ build hospital_autogen/timestamp hospital_autogen/mocs_compilation.cpp | ${cmake
 #############################################
 # Phony custom command for CMakeFiles/hospital_autogen_timestamp_deps
 
-build CMakeFiles/hospital_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/hospital_autogen_timestamp_deps: phony /Users/asser/Qt/6.8.0/macos/./libexec/uic /Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/asser/Qt/6.8.0/macos/./libexec/moc /Users/asser/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
+build CMakeFiles/hospital_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/hospital_autogen_timestamp_deps: phony /Users/asser/Qt/6.8.0/macos/./libexec/uic /Users/asser/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/asser/Qt/6.8.0/macos/./libexec/moc /Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/QtCore
 
 
 #############################################
