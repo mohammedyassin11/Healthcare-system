@@ -23,7 +23,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="PasswordLabelRegister_2">
+  <widget class="QLineEdit" name="PasswordInputRegister">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -75,7 +75,7 @@
     <string>Finish</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="UsernameInputRegister_2">
+  <widget class="QLineEdit" name="LastnameInputRegister">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -85,7 +85,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="UsernameInputRegister_3">
+  <widget class="QLineEdit" name="FirstnameInputRegister">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -147,7 +147,7 @@
     </property>
    </widget>
   </widget>
-  <widget class="QLabel" name="UsernameLabelRegister_2">
+  <widget class="QLabel" name="LastnameLabelRegister">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -160,7 +160,7 @@
     <string>Last Name:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="UsernameLabelRegister_3">
+  <widget class="QLabel" name="FirstnameLabelRegister">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -185,7 +185,7 @@
    <property name="title">
     <string>Gender</string>
    </property>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="MaleButton">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -198,20 +198,7 @@
      <string>Male</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>60</y>
-      <width>99</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Woman</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radioButton_3">
+   <widget class="QRadioButton" name="FemaleButton">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -221,7 +208,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Unknown</string>
+     <string>Female</string>
     </property>
    </widget>
   </widget>

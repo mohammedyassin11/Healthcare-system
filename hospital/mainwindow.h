@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QDialog>
 #include "register.h"
+#include "admin.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
