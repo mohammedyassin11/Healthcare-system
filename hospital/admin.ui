@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>627</width>
-    <height>496</height>
+    <width>835</width>
+    <height>723</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>360</y>
+     <x>140</x>
+     <y>640</y>
      <width>171</width>
      <height>51</height>
     </rect>
@@ -30,20 +30,20 @@
    <property name="geometry">
     <rect>
      <x>340</x>
-     <y>360</y>
+     <y>640</y>
      <width>171</width>
      <height>51</height>
     </rect>
    </property>
    <property name="text">
-    <string>Edit Medical Records.</string>
+    <string>Save</string>
    </property>
   </widget>
   <widget class="QLabel" name="PixmapCleo">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>140</y>
+     <x>220</x>
+     <y>110</y>
      <width>401</width>
      <height>131</height>
     </rect>
@@ -55,8 +55,8 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>107</x>
-     <y>36</y>
+     <x>210</x>
+     <y>30</y>
      <width>401</width>
      <height>51</height>
     </rect>
@@ -66,6 +66,29 @@
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>420</y>
+     <width>571</width>
+     <height>171</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>640</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edit Medical Records</string>
    </property>
   </widget>
  </widget>

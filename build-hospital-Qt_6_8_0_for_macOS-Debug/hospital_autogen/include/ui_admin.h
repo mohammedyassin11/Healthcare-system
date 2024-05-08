@@ -14,6 +14,7 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTextEdit>
 
 QT_BEGIN_NAMESPACE
 
@@ -24,25 +25,33 @@ public:
     QPushButton *pushButton_2;
     QLabel *PixmapCleo;
     QLabel *label;
+    QTextEdit *textEdit;
+    QPushButton *pushButton_3;
 
     void setupUi(QDialog *admin)
     {
         if (admin->objectName().isEmpty())
             admin->setObjectName("admin");
-        admin->resize(627, 496);
+        admin->resize(835, 723);
         pushButton = new QPushButton(admin);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(110, 360, 171, 51));
+        pushButton->setGeometry(QRect(140, 640, 171, 51));
         pushButton_2 = new QPushButton(admin);
         pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(340, 360, 171, 51));
+        pushButton_2->setGeometry(QRect(340, 640, 171, 51));
         PixmapCleo = new QLabel(admin);
         PixmapCleo->setObjectName("PixmapCleo");
-        PixmapCleo->setGeometry(QRect(110, 140, 401, 131));
+        PixmapCleo->setGeometry(QRect(220, 110, 401, 131));
         label = new QLabel(admin);
         label->setObjectName("label");
-        label->setGeometry(QRect(107, 36, 401, 51));
+        label->setGeometry(QRect(210, 30, 401, 51));
         label->setAlignment(Qt::AlignCenter);
+        textEdit = new QTextEdit(admin);
+        textEdit->setObjectName("textEdit");
+        textEdit->setGeometry(QRect(140, 420, 571, 171));
+        pushButton_3 = new QPushButton(admin);
+        pushButton_3->setObjectName("pushButton_3");
+        pushButton_3->setGeometry(QRect(540, 640, 171, 51));
 
         retranslateUi(admin);
 
@@ -53,9 +62,10 @@ public:
     {
         admin->setWindowTitle(QCoreApplication::translate("admin", "Dialog", nullptr));
         pushButton->setText(QCoreApplication::translate("admin", "Edit User Credentials.", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("admin", "Edit Medical Records.", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("admin", "Save", nullptr));
         PixmapCleo->setText(QString());
         label->setText(QCoreApplication::translate("admin", "Welcome back admin!", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("admin", "Edit Medical Records", nullptr));
     } // retranslateUi
 
 };

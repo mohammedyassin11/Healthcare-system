@@ -939,13 +939,6 @@
  mdp:/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h
  mdp:/Users/asser/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h
 /Users/asser/Desktop/hospital_lab/hospital/managementsystem.cpp
-/Users/asser/Desktop/hospital_lab/hospital/admin.cpp
- uic:ui_admin.h
-/Users/asser/Desktop/hospital_lab/hospital/main.cpp
-/Users/asser/Desktop/hospital_lab/hospital/mainwindow.cpp
- uic:./ui_mainwindow.h
-/Users/asser/Desktop/hospital_lab/hospital/patient.cpp
- uic:ui_patient.h
 /Users/asser/Desktop/hospital_lab/hospital/register.h
  mmc:Q_OBJECT
  mdp:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h
@@ -1194,5 +1187,12 @@
  mdp:/Users/asser/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h
  mdp:/Users/asser/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h
  mdp:/Users/asser/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
+/Users/asser/Desktop/hospital_lab/hospital/admin.cpp
+ uic:ui_admin.h
+/Users/asser/Desktop/hospital_lab/hospital/main.cpp
+/Users/asser/Desktop/hospital_lab/hospital/mainwindow.cpp
+ uic:./ui_mainwindow.h
+/Users/asser/Desktop/hospital_lab/hospital/patient.cpp
+ uic:ui_patient.h
 /Users/asser/Desktop/hospital_lab/hospital/register.cpp
  uic:ui_register.h

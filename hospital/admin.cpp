@@ -3,6 +3,7 @@
 #include <QFile>
 #include <QTextStream>
 #include <QMessageBox>
+#include <QFileDialog>
 
 admin::admin(QWidget *parent)
     : QDialog(parent)
@@ -27,38 +28,49 @@ admin::~admin()
 
 void admin::on_pushButton_clicked()
 {
-    // Open the medical records text file
-    QFile file("/path/to/medical_records.txt"); // Replace "/path/to/medical_records.txt" with the actual path to your medical records text file
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        QMessageBox::warning(this, "Error", "Could not open medical records file.");
-        return;
+    QFile file("/Users/asser/Desktop/hospital_lab/UserCred.txt");
+    if (!file.open(QIODevice::ReadWrite))
+    {
+        QMessageBox::information(0,"info",file.errorString());
     }
 
-    // Read the contents of the file
     QTextStream in(&file);
-    QString contents = in.readAll();
 
-    // Display the contents in a message box or perform other operations
-    QMessageBox::information(this, "Medical Records", contents);
-
-    file.close();
+    ui->textEdit->setText(in.readAll());
 }
 
 void admin::on_pushButton_2_clicked()
 {
-    // Open the user credentials text file
-    QFile file("/path/to/user_credentials.txt"); // Replace "/path/to/user_credentials.txt" with the actual path to your user credentials text file
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        QMessageBox::warning(this, "Error", "Could not open user credentials file.");
+    QString fileName = QFileDialog::getOpenFileName(this, "Open File", "/Users/asser/Desktop/hospital_lab/", "Text Files (*.txt)");
+    if (fileName.isEmpty()) {
+        QMessageBox::warning(this, "Error", "No file selected.");
         return;
     }
 
-    // Read the contents of the file
-    QTextStream in(&file);
-    QString contents = in.readAll();
+    QFile file(fileName);
+    if (!file.open(QIODevice::ReadWrite | QIODevice::Text)) {
+        QMessageBox::warning(this, "Error", "Could not open file.");
+        return;
+    }
 
-    // Display the contents in a message box or perform other operations
-    QMessageBox::information(this, "User Credentials", contents);
+    QTextStream out(&file);
+    out << ui->textEdit->toPlainText();
 
     file.close();
+
+    QMessageBox::information(this, "Success", "File saved successfully.");
 }
+
+void admin::on_pushButton_3_clicked()
+{
+    QFile file("/Users/asser/Desktop/hospital_lab/MedicRecords.txt");
+    if (!file.open(QIODevice::ReadWrite))
+    {
+        QMessageBox::information(0,"info",file.errorString());
+    }
+
+    QTextStream in(&file);
+
+    ui->textEdit->setText(in.readAll());
+}
+
