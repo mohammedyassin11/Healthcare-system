@@ -72,52 +72,6 @@
     </property>
    </widget>
   </widget>
-  <widget class="QGroupBox" name="DoctorBox">
-   <property name="geometry">
-    <rect>
-     <x>480</x>
-     <y>100</y>
-     <width>131</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>Name of Doctor</string>
-   </property>
-   <widget class="QComboBox" name="DoctorName">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>27</y>
-      <width>131</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QGroupBox" name="SymptomsBox">
-   <property name="geometry">
-    <rect>
-     <x>480</x>
-     <y>280</y>
-     <width>221</width>
-     <height>171</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>Symptoms</string>
-   </property>
-   <widget class="QLineEdit" name="SymptomslineEdit">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>20</y>
-      <width>221</width>
-      <height>151</height>
-     </rect>
-    </property>
-   </widget>
-  </widget>
   <widget class="QLabel" name="InstructionsLabel">
    <property name="geometry">
     <rect>
@@ -206,7 +160,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="bookpushButton_2">
+  <widget class="QPushButton" name="bookpushButton">
    <property name="geometry">
     <rect>
      <x>480</x>
@@ -230,6 +184,16 @@
    </property>
    <property name="text">
     <string>Return to Login</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="DoctorName">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>120</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
    </property>
   </widget>
  </widget>

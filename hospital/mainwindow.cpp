@@ -37,7 +37,7 @@ void MainWindow::LoginButton_clicked()
         QString line = in.readLine();
         QStringList parts = line.split(',');
 
-        // Extract username and password from the line
+        // Extract username, password, and status from the line
         if (parts.size() == 6) {
             QString fileUsername = parts[2].trimmed();
             QString filePassword = parts[3].trimmed();
@@ -53,37 +53,58 @@ void MainWindow::LoginButton_clicked()
                     // and hide the registration window
                     QMessageBox::information(this, "Success", "Login successful!");
 
-                    if (STATUS == "Patient")
-                    {
+                    if (STATUS == "Patient") {
+                        // Show patient window
                         this->hide();
-
                         Patient patient;
-                        patient.isVisible();
                         patient.exec();
-                    }
-
-                    if (STATUS == "admin")
-                    {
+                        this->show();
+                    } else if (STATUS == "admin") {
+                        // Show admin window
                         this->hide();
-
                         admin ADMIN;
-                        ADMIN.isVisible();
                         ADMIN.exec();
-                    }
+                    } else if (STATUS == "Doctor" || STATUS == "Nurse") {
 
-                    if (STATUS == "Doctor" or STATUS == "Nurse" )
-                    {
+                        if (STATUS == "Doctor") {
+
+                            bool doctorExists = false;
+                            QString doctorFirstName = parts[0].trimmed();
+                            QString doctorLastName = parts[1].trimmed();
+
+                            QFile doctorFile("/Users/asser/Desktop/hospital_lab/availability.txt");
+                            if (doctorFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
+                                QTextStream doctorStream(&doctorFile);
+                                while (!doctorStream.atEnd()) {
+                                    QString doctorLine = doctorStream.readLine();
+                                    if (doctorLine.contains(doctorFirstName) && doctorLine.contains(doctorLastName)) {
+                                        doctorExists = true;
+                                        break;
+                                    }
+                                }
+                                doctorFile.close();
+                            }
+
+                            // If doctor is not registered, append the availability.txt
+                            if (!doctorExists) {
+                                if (doctorFile.open(QIODevice::Append | QIODevice::Text)) {
+                                    QTextStream out(&doctorFile);
+                                    out << doctorFirstName << ",";
+                                    out << doctorLastName << ",";
+                                    doctorFile.close();
+                                }
+                            }
+                        }
+
+                        // Show staff window
+                        this->hide();
                         Staff staff;
-                        staff.isVisible();
                         staff.exec();
+                        this->show();
                     }
-                        \
-
-
                     return;
                 } else {
                     // Password does not match
-                    // Show an error message
                     QMessageBox::critical(this, "Error", "Incorrect password!");
                     return;
                 }
@@ -93,20 +114,20 @@ void MainWindow::LoginButton_clicked()
 
     // If the loop completes and the username is not found
     if (!userFound) {
-        // Show an error message
         QMessageBox::critical(this, "Error", "Username not found!");
     }
 }
 
 
-void MainWindow::on_RegisterButton_clicked()
-{
-    this->hide();
 
-    Register R3gister;
-    R3gister.isVisible();
-    R3gister.exec();
-    this->show();
+    void MainWindow::on_RegisterButton_clicked()
+    {
+        this->hide();
 
-}
+        Register R3gister;
+        R3gister.isVisible();
+        R3gister.exec();
+        this->show();
+
+    }
 

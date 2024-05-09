@@ -15,7 +15,6 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTextBrowser>
 
@@ -29,10 +28,6 @@ public:
     QComboBox *AvailableTime;
     QLabel *Timelabel;
     QLabel *Daylabel;
-    QGroupBox *DoctorBox;
-    QComboBox *DoctorName;
-    QGroupBox *SymptomsBox;
-    QLineEdit *SymptomslineEdit;
     QLabel *InstructionsLabel;
     QPushButton *pushButton;
     QLabel *WelcomeLabel;
@@ -40,8 +35,9 @@ public:
     QLabel *Excalamationlabel;
     QLabel *ProfilePic;
     QTextBrowser *textBrowser;
-    QPushButton *bookpushButton_2;
+    QPushButton *bookpushButton;
     QPushButton *pushButton_2;
+    QComboBox *DoctorName;
 
     void setupUi(QDialog *Patient)
     {
@@ -63,18 +59,6 @@ public:
         Daylabel = new QLabel(TimeofAppointment);
         Daylabel->setObjectName("Daylabel");
         Daylabel->setGeometry(QRect(10, 40, 63, 20));
-        DoctorBox = new QGroupBox(Patient);
-        DoctorBox->setObjectName("DoctorBox");
-        DoctorBox->setGeometry(QRect(480, 100, 131, 61));
-        DoctorName = new QComboBox(DoctorBox);
-        DoctorName->setObjectName("DoctorName");
-        DoctorName->setGeometry(QRect(0, 27, 131, 31));
-        SymptomsBox = new QGroupBox(Patient);
-        SymptomsBox->setObjectName("SymptomsBox");
-        SymptomsBox->setGeometry(QRect(480, 280, 221, 171));
-        SymptomslineEdit = new QLineEdit(SymptomsBox);
-        SymptomslineEdit->setObjectName("SymptomslineEdit");
-        SymptomslineEdit->setGeometry(QRect(0, 20, 221, 151));
         InstructionsLabel = new QLabel(Patient);
         InstructionsLabel->setObjectName("InstructionsLabel");
         InstructionsLabel->setGeometry(QRect(480, 40, 251, 41));
@@ -96,12 +80,15 @@ public:
         textBrowser = new QTextBrowser(Patient);
         textBrowser->setObjectName("textBrowser");
         textBrowser->setGeometry(QRect(60, 100, 321, 291));
-        bookpushButton_2 = new QPushButton(Patient);
-        bookpushButton_2->setObjectName("bookpushButton_2");
-        bookpushButton_2->setGeometry(QRect(480, 480, 100, 32));
+        bookpushButton = new QPushButton(Patient);
+        bookpushButton->setObjectName("bookpushButton");
+        bookpushButton->setGeometry(QRect(480, 480, 100, 32));
         pushButton_2 = new QPushButton(Patient);
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setGeometry(QRect(60, 570, 151, 51));
+        DoctorName = new QComboBox(Patient);
+        DoctorName->setObjectName("DoctorName");
+        DoctorName->setGeometry(QRect(480, 120, 131, 31));
 
         retranslateUi(Patient);
 
@@ -114,15 +101,13 @@ public:
         TimeofAppointment->setTitle(QCoreApplication::translate("Patient", "Time of Appointment", nullptr));
         Timelabel->setText(QCoreApplication::translate("Patient", "Time", nullptr));
         Daylabel->setText(QCoreApplication::translate("Patient", "Day", nullptr));
-        DoctorBox->setTitle(QCoreApplication::translate("Patient", "Name of Doctor", nullptr));
-        SymptomsBox->setTitle(QCoreApplication::translate("Patient", "Symptoms", nullptr));
         InstructionsLabel->setText(QCoreApplication::translate("Patient", "Book your Appointment:", nullptr));
         pushButton->setText(QCoreApplication::translate("Patient", "View Medical Records", nullptr));
         WelcomeLabel->setText(QCoreApplication::translate("Patient", "Welcome back ", nullptr));
         NameLabel->setText(QString());
         Excalamationlabel->setText(QCoreApplication::translate("Patient", "!", nullptr));
         ProfilePic->setText(QString());
-        bookpushButton_2->setText(QCoreApplication::translate("Patient", "Book", nullptr));
+        bookpushButton->setText(QCoreApplication::translate("Patient", "Book", nullptr));
         pushButton_2->setText(QCoreApplication::translate("Patient", "Return to Login", nullptr));
     } // retranslateUi
 

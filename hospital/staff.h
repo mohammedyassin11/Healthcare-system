@@ -15,6 +15,11 @@ public:
     explicit Staff(QWidget *parent = nullptr);
     ~Staff();
 
+private slots:
+    void on_SavepushButton_clicked();
+
+    void on_returntoLogin_clicked();
+
 private:
     Ui::Staff *ui;
 };
